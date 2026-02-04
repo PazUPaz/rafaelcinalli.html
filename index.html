@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Links</title>
+
+  <!-- Melhor integração mobile -->
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #000;
+    }
+
+    /* ===================== */
+    /* MOBILE (PADRÃO)       */
+    /* ===================== */
+
+    .page {
+      min-height: 100vh;
+      background: url("03.png") no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .content {
+      position: absolute;
+      bottom: 20px;              /* ajuste fino aqui */
+      left: 0;
+      right: 0;
+      padding: 0 24px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      padding: 05px 16px;
+      margin: 12px auto;
+      max-width: 400px;
+      background: rgba(239, 204, 32, 0.75);
+      border-radius: 12px;
+      color: #000000;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+
+    .btn .icon {
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14px;
+      flex-shrink: 0;
+    }
+
+    .btn .icon img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .btn .label {
+      flex: 1;
+      text-align: left;
+    }
+
+    /* ===================== */
+    /* DESKTOP               */
+    /* ===================== */
+
+    @media (min-width: 768px) {
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .page {
+        width: 360px;
+        height: 640px;
+        min-height: auto;
+        border-radius: 22px;
+        box-shadow: 0 0 40px rgba(0,0,0,0.6);
+        overflow: hidden;
+      }
+
+      .content {
+        bottom: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="content">
+
+      <a class="btn" href="https://wa.me/5562983134756" target="_blank">
+        <span class="icon">
+          <img src="i1.png" alt="WhatsApp">
+        </span>
+        <span class="label">WhatsApp_RafaelCinalli</span>
+      </a>
+
+      <a class="btn" href="https://www.instagram.com/rcnpaz" target="_blank">
+        <span class="icon">
+          <img src="i4.png" alt="Instagram">
+        </span>
+        <span class="label">Instagram_RafaelCinalli</span>
+      </a>
+
+      <a class="btn" href="https://www.tiktok.com/@legendcutss" target="_blank">
+        <span class="icon">
+          <img src="i2.png" alt="TikTok">
+        </span>
+        <span class="label">TikTok_RafaelCinalli</span>
+      </a>
+
+      <a class="btn" href="https://www.linkedin.com/in/rafael-cinalli-n-paz" target="_blank">
+        <span class="icon">
+          <img src="i3.png" alt="LinkedIn">
+        </span>
+        <span class="label">LinkedIn_RafaelCinalli</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
